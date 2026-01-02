@@ -1,0 +1,113 @@
+---
+title: Welcome to Mark Marchenko
+description: Discover Mark Marchenko, your go-to platform for organizing and managing project documentation with ease and efficiency.
+---
+
+## Overview
+
+Mark Marchenko provides a centralized space to organize, edit, and collaborate on your project documentation. You create pages, embed code examples, and manage versions effortlessly. This platform streamlines your workflow, ensuring your team always accesses the latest docs.
+
+## Key Features
+
+Mark Marchenko offers powerful tools for documentation management.
+
+<Columns cols={3}>
+  <Card title="Page Organization" icon="layout" href="/docs/organization">
+    Structure your docs with folders, tags, and search. Navigate complex projects easily.
+  </Card>
+  <Card title="Real-time Collaboration" icon="users" href="/docs/collaboration">
+    Edit with your team simultaneously. See changes live and resolve conflicts.
+  </Card>
+  <Card title="Version History" icon="git-branch" href="/docs/versions">
+    Track changes over time. Roll back to previous versions instantly.
+  </Card>
+</Columns>
+
+## Benefits of a Dedicated Doc Space
+
+Using Mark Marchenko centralizes your knowledge, reducing onboarding time for new team members by up to 50%. You avoid scattered notes in Slack or email, keeping everything searchable and up-to-date.
+
+<Callout kind="tip">
+  Integrate with your CI/CD pipeline to auto-publish docs on every release.
+</Callout>
+
+## Quick Start
+
+Get up and running in minutes.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Create your account at `https://markmarchenko.com/signup`. Verify your email.
+  </Step>
+  <Step title="Create Workspace" icon="folder-plus">
+    Set up a new doc space for your project. Choose a name and invite collaborators.
+  </Step>
+  <Step title="Add Your First Page" icon="file-plus">
+    Click "New Page" and start writing in MDX. Embed components like Cards or Steps.
+  </Step>
+  <Step title="Publish and Share" icon="share-2">
+    Make it public or share a link. Embed in your README or dashboard.
+  </Step>
+</Steps>
+
+## Customization Options
+
+Tailor Mark Marchenko to your brand.
+
+<Tabs>
+  <Tab title="Theme Colors" icon="palette">
+    Update your brand color in settings:
+    
+````javascript
+const config = {
+  brandColor: '#3B82F6',
+  primaryFont: 'Inter'
+};
+````
+  </Tab>
+  <Tab title="Custom Domain" icon="globe">
+    Connect your domain:
+    
+````bash
+# Add CNAME record
+dashboard.example.com -> markmarchenko.com
+````
+  </Tab>
+</Tabs>
+
+<Expandable title="Advanced CSS Overrides" default-open="false">
+  Inject custom styles for headers or buttons:
+  
+````css
+:root {
+  --brand-primary: #3B82F6;
+}
+
+.header {
+  background: var(--brand-primary);
+}
+````
+</Expandable>
+
+## Quick Navigation
+
+Dive deeper with these guides.
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="zap" href="/quickstart">
+    Build your first doc site.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your doc space.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Latest updates and features.
+  </Card>
+  <Card title="Help Center" icon="help-circle" href="/help-center">
+    FAQs and troubleshooting.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+  Ready to start? Head to [Quickstart](/quickstart) for hands-on setup.
+</Callout>

@@ -1,0 +1,102 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and new features released in Mark Marchenko.
+---
+
+## Recent Updates
+
+Stay informed about all changes in Mark Marchenko. Review the release notes below to understand new features, improvements, and fixes. Each release includes migration guidance where necessary.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for shared documentation spaces
+- Introduced custom themes with your brand color `#3B82F6`
+- New search indexing for faster document discovery
+
+## Improvements
+
+- Enhanced performance for large documentation projects (up to `>50%` faster loads)
+- Improved mobile responsiveness across all pages
+
+## Bug Fixes
+
+- Fixed rendering issues with nested code blocks
+- Resolved authentication token refresh errors
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated version history with diff viewer
+- Added export to PDF and Markdown formats
+
+## Bug Fixes
+
+- Corrected frontmatter parsing errors in MDX files
+- Fixed link resolution for internal anchor navigation (`#section-name`)
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core documentation workspace with MDX support
+- YAML frontmatter validation and editing
+- Built-in component library for rich pages
+
+## Breaking Changes
+
+- Updated default theme to use `#3B82F6` as primary color
+- Migrated config format from JSON to YAML
+
+</Update>
+
+## Upcoming Features
+
+Get a preview of what's coming next to Mark Marchenko. These enhancements focus on developer experience and integration.
+
+<Columns cols={3}>
+  <Card title="AI Assistant" icon="bot" href="#">
+    Generate documentation outlines automatically using natural language prompts.
+  </Card>
+  <Card title="Git Sync" icon="git-branch" href="#">
+    Two-way synchronization with GitHub repositories for version control.
+  </Card>
+  <Card title="Analytics" icon="bar-chart-3" href="#">
+    Track document views, search queries, and user engagement.
+  </Card>
+</Columns>
+
+## Migration Notes
+
+When updating to the latest version, follow these steps to ensure a smooth transition.
+
+<Steps>
+  <Step title="Backup Your Space" icon="database-backup">
+    Export all documents via the dashboard at `https://dashboard.example.com/export`.
+  </Step>
+  <Step title="Update Configuration" icon="settings">
+    Review your YAML frontmatter for deprecated fields.
+````yaml
+title: Your Page
+description: Updated description
+themeColor: "#3B82F6"
+````
+  </Step>
+  <Step title="Test Components" icon="test-tube">
+    Validate JSX components like `<Callout>` and `<Steps>` in preview mode.
+  </Step>
+</Steps>
+
+<Callout kind="alert">
+  For v1.2.0, regenerate search indexes after migration. Use the admin panel at `https://dashboard.example.com/admin/indexes`.
+</Callout>
+
+## Stay Updated
+
+Subscribe to notifications in your account settings to receive emails about new releases. Check this changelog regularly for the latest changes that impact your workflow. You can also join the community forum for discussions on upcoming previews.
